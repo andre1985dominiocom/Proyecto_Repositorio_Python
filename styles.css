@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     margin: 5px;
     padding: 5px;
@@ -5,11 +11,11 @@ main {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 5px;
-    padding: 5px;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: work-sans, sans-serif;
+    margin: 15px;
+    padding: 15px;
+    background-color: #38a900;
+    color: #000000ab;
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
@@ -18,19 +24,20 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     white-space: nowrap;
 }
 
 .logo-img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
 }
 
 .menu {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 15px;
+    margin: 15px;
     display: flex;
     flex-direction: wrap;
     justify-content: center;
@@ -38,15 +45,15 @@ body {
 
 .menu ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 15px;
+    margin: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .menu li {
-    margin: 0;
+    margin: 15px;
 }
 
 .menu a {
@@ -60,8 +67,11 @@ body {
 }
 
 .menu a:hover {
-    background-color: #006c44fb;
+    background-color: #39a900;
     border-radius: 5px;
-    border: #006c45 solid 1px; 
+    border: #39a900 solid 1px;
 }
 
+h1 {
+    color: #38a900;
+}
