@@ -21,25 +21,34 @@ body {
     text-align: left;
 }
 
+.text {
+    float: left;
+}
+
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    white-space: nowrap;
+    margin-bottom: 20px;
 }
 
 .logo-img {
     width: 100px;
     height: 100px;
-    align-items: center;
+    float: left;
+    margin-right: 5px;
+}
+
+.linea-vertical {
+    width: 2px;
+    height: 90px;
+    background-color: #000;
+    float: left;
+    margin: 10px 15px;
 }
 
 .menu {
     list-style: none;
     padding: 15px;
     margin: 15px;
-    display: flex;
-    flex-direction: wrap;
+    display: inline-block;
     justify-content: center;
 }
 
@@ -47,12 +56,11 @@ body {
     list-style: none;
     padding: 15px;
     margin: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
 }
 
 .menu li {
+    display: inline-block;
     margin: 15px;
 }
 
