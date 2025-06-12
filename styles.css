@@ -101,13 +101,12 @@ h1 {
 }
 
 /*Uso de medias queries*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     body {
         width: 100%;
         margin: 0px;
         padding: 0px;
         font-size: 16px;
-        font-family: sans-serif;
     }
 
     .menu button {
@@ -129,7 +128,7 @@ h1 {
         float: left;
         margin-right: 5px;
     }
-    
+
     .text{
         float: none;
     }
