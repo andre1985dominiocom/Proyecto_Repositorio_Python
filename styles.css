@@ -11,7 +11,7 @@ main {
 }
 
 body {
-    font-family: work-sans, sans-serif;
+    font-family: sans-serif;
     margin: 15px;
     padding: 15px;
     background-color: #38a900;
@@ -52,6 +52,22 @@ body {
     justify-content: center;
 }
 
+.menu button{
+    display: block;
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.nav {
+    display: none;
+}
+
 .menu ul {
     list-style: none;
     padding: 15px;
@@ -82,4 +98,39 @@ body {
 
 h1 {
     color: #38a900;
+}
+
+/*Uso de medias queries*/
+@media (min-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+
+    .menu button {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .logo {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .logo-img {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 5px;
+    }
+    
+    .text{
+        float: none;
+    }
 }
