@@ -1,135 +1,132 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main {
-    margin: 5px;
-    padding: 5px;
-    background-color: #f0f0f0;
-}
-
+/* Fuente y fondo */
 body {
     font-family: sans-serif;
-    margin: 15px;
+    background-color: #f0f0f0;
     padding: 15px;
-    background-color: #38a900;
-    color: #000000ab;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: left;
+    color: #000;
 }
 
-.text {
-    float: left;
-}
-
+/* Estilos del logo y texto */
 .logo {
+    text-align: left;
+    white-space: nowrap;
     margin-bottom: 20px;
+}
+
+.logo-img,
+.linea-vertical,
+.text {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .logo-img {
     width: 100px;
     height: 100px;
-    float: left;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
+/* Estilos linea vertical */
 .linea-vertical {
     width: 2px;
     height: 90px;
     background-color: #000;
-    float: left;
-    margin: 10px 15px;
+    margin: 0 15px;
+}
+
+/* Estilos del texto */
+.text h1 {
+    color: #39a900;
+}
+
+/* Estilos de navegación */
+.nav input[type="checkbox"] {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    padding: 10px;
+    background-color: #39a900;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    width: fit-content;
 }
 
 .menu {
     list-style: none;
-    padding: 15px;
-    margin: 15px;
-    display: inline-block;
-    justify-content: center;
-}
-
-.menu button{
-    display: block;
-    padding: 8px;
-    border: none;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-}
-
-.nav {
-    display: none;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 15px;
-    margin: 15px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .menu li {
     display: inline-block;
-    margin: 15px;
+    margin: 0 10px;
 }
 
 .menu a {
-    display: block;
-    padding: 10px 15px;
-    color: rgb(0, 0, 0);
     text-decoration: none;
+    color: black;
     font-weight: bold;
-    font-size: 14px;
-    transition: background-color 0.3s;
+    padding: 8px 12px;
 }
 
 .menu a:hover {
     background-color: #39a900;
+    color: white;
     border-radius: 5px;
-    border: #39a900 solid 1px;
 }
 
-h1 {
-    color: #38a900;
-}
-
-/*Uso de medias queries*/
-@media (max-width: 768px) {
-    body {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        font-size: 16px;
-    }
-
-    .menu button {
-        display: none;
-    }
-
-    .nav {
-        display: block;
-    }
-
-    .logo {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-
+/* Media queries */
+@media (max-width: 768px){
     .logo-img {
-        width: 100px;
-        height: 100px;
-        float: left;
-        margin-right: 5px;
+    width: 70px;
+    height: 70px;
     }
 
-    .text{
-        float: none;
+    .linea-vertical {
+    height: 70px;
+    }
+
+    .text h1,
+    .text h2,
+    .text h3 {
+    font-size: 14px;
+    }
+
+    .menu {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+    }
+
+  /* Mostrar menú solo si está checked */
+    #menu-toggle:checked + .menu-icon + .menu {
+    display: block;
+    }
+
+    .menu li {
+    display: block;
+    margin: 10px 0;
+    }
+
+    .menu a {
+    display: block;
+    background-color: #e0e0e0;
+    padding: 10px;
+    }
+
+    .menu-icon {
+    display: block;
     }
 }
