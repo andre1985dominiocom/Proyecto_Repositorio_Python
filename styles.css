@@ -130,3 +130,51 @@ body {
     display: block;
     }
 }
+
+#imagenes {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#imagenes h4 {
+    color: #39a900;
+    margin-bottom: 20px;
+}
+
+.galeria {
+    text-align: center;
+}
+
+.imagen-item {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    vertical-align: top;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.imagen-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.imagen-item figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+    font-size: 14px;
+}
+
+.galeria img {
+    width: 100%;
+    border: 2px solid #ccc;
+    font-style: italic;
+    color: #333;
+}
