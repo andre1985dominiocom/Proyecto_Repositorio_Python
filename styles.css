@@ -87,7 +87,7 @@ body {
     border-radius: 5px;
 }
 
-/* Media queries */
+/* Media queries para dispositivos móviles */
 @media (max-width: 768px){
     .logo-img {
     width: 70px;
@@ -112,6 +112,8 @@ body {
 
   /* Mostrar menú solo si está checked */
     #menu-toggle:checked + .menu-icon + .menu {
+/* Hermano adyacente la regla se cumple porque .menu-icon debe ir justo después de #menu-toggle
+.menu debe ir justo después de .menu-icon */
     display: block;
     }
 
@@ -131,6 +133,7 @@ body {
     }
 }
 
+/* Estilos de la sección de imágenes */
 #imagenes {
     padding: 20px;
     margin-top: 30px;
@@ -148,7 +151,8 @@ body {
     text-align: center;
 }
 
-.imagen-item {
+/* Estilos de las imágenes */
+.imagen-1 {
     display: inline-block;
     width: 300px;
     margin: 10px;
@@ -159,13 +163,13 @@ body {
     border-radius: 10px;
 }
 
-.imagen-item img {
+.imagen-1 img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.imagen-item figcaption {
+.imagen-1 figcaption {
     margin-top: 10px;
     font-style: italic;
     color: #333;
@@ -177,4 +181,187 @@ body {
     border: 2px solid #ccc;
     font-style: italic;
     color: #333;
+}
+
+.imagen-2 {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    vertical-align: top;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.imagen-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.imagen-2 figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+    font-size: 14px;
+}
+
+.imagen-3 {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    vertical-align: top;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.imagen-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.imagen-3 figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Estilos de la sección de bienvenida */
+#home {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#home h5 {
+    color: #39a900;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.bienvenidos {
+    text-align: center;
+}
+
+.texto-bienvenida p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Estilos de las imágenes */
+.imagen-bienvenida-1 {
+    display: inline-block;
+    width: 700px;
+    margin: 10px;
+    vertical-align: top;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.imagen-bienvenida-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.imagen-bienvenida-1 figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+    font-size: 14px;
+}
+
+.imagen-bienvenida-2 {
+    display: inline-block;
+    width: 400px;
+    margin: 10px;
+    vertical-align: top;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.imagen-bienvenida-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.imagen-bienvenida-2 figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+    font-size: 14px;
+}
+
+.imagen-bienvenida-3 {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    vertical-align: top;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.imagen-bienvenida-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.imagen-bienvenida-3 figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .imagen-bienvenida-1 {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .imagen-bienvenida-2,
+    .imagen-bienvenida-3 {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .imagen-bienvenida-1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen-bienvenida-2 img,
+    .imagen-bienvenida-3 img {
+        width: 90%;
+        height: auto;
+    }
+
+    .imagen-bienvenida-1 figcaption {
+        text-align: center;
+    }
+
+    .imagen-bienvenida-2 figcaption,
+    .imagen-bienvenida-3 figcaption {
+        text-align: center;
+    }
 }
