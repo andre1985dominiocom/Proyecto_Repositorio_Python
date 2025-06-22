@@ -51,87 +51,50 @@ body {
     display: none;
 }
 
+.nav {
+    max-width: 1100px;
+    margin: 10px auto;
+    margin-left: 110px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #39a900;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
 .menu-icon {
     display: none;
-    font-size: 26px;
-    padding: 10px;
-    background-color: #39a900;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px auto;
-    width: fit-content;
 }
 
 .menu {
     list-style: none;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0;
+    padding: 0;
 }
 
 .menu li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 8px;
 }
 
 .menu a {
     text-decoration: none;
-    color: black;
     font-weight: bold;
+    color: black;
     padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 .menu a:hover {
     background-color: #39a900;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-/* Media queries para dispositivos móviles */
-@media (max-width: 768px){
-    .logo-img {
-    width: 70px;
-    height: 70px;
-    }
-
-    .linea-vertical {
-    height: 70px;
-    }
-
-    .text h1,
-    .text h2,
-    .text h3 {
-    font-size: 14px;
-    }
-
-    .menu {
-    display: none;
-    text-align: left;
-    margin-top: 10px;
-    }
-
-  /* Mostrar menú solo si está checked */
-    #menu-toggle:checked + .menu-icon + .menu {
-/* Hermano adyacente la regla se cumple porque .menu-icon debe ir justo después de #menu-toggle
-.menu debe ir justo después de .menu-icon */
-    display: block;
-    }
-
-    .menu li {
-    display: block;
-    margin: 10px 0;
-    }
-
-    .menu a {
-    display: block;
-    background-color: #e0e0e0;
-    padding: 10px;
-    }
-
-    .menu-icon {
-    display: block;
-    }
-}
 
 /* Estilos de la sección de imágenes */
 #imagenes {
@@ -166,7 +129,7 @@ body {
 .imagen-1 img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .imagen-1 figcaption {
@@ -185,7 +148,7 @@ body {
 
 .imagen-2 {
     display: inline-block;
-    width: 300px;
+    width: 310px;
     margin: 10px;
     vertical-align: top;
     background-color: white;
@@ -197,7 +160,7 @@ body {
 .imagen-2 img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .imagen-2 figcaption {
@@ -209,7 +172,7 @@ body {
 
 .imagen-3 {
     display: inline-block;
-    width: 300px;
+    width: 322px;
     margin: 10px;
     vertical-align: top;
     background-color: white;
@@ -221,7 +184,7 @@ body {
 .imagen-3 img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .imagen-3 figcaption {
@@ -234,7 +197,7 @@ body {
 /* Estilos de la sección de bienvenida */
 #home {
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 140px;
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -249,6 +212,7 @@ body {
 
 .bienvenidos {
     text-align: center;
+    margin-top: 5px;
 }
 
 .texto-bienvenida p {
@@ -260,7 +224,7 @@ body {
 /* Estilos de las imágenes */
 .imagen-bienvenida-1 {
     display: inline-block;
-    width: 700px;
+    width: 900px;
     margin: 10px;
     vertical-align: top;
     background-color: white;
@@ -272,7 +236,7 @@ body {
 .imagen-bienvenida-1 img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .imagen-bienvenida-1 figcaption {
@@ -296,7 +260,7 @@ body {
 .imagen-bienvenida-2 img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .imagen-bienvenida-2 figcaption {
@@ -308,7 +272,7 @@ body {
 
 .imagen-bienvenida-3 {
     display: inline-block;
-    width: 300px;
+    width: 270px;
     margin: 10px;
     vertical-align: top;
     background-color: white;
@@ -320,7 +284,7 @@ body {
 .imagen-bienvenida-3 img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .imagen-bienvenida-3 figcaption {
@@ -331,37 +295,123 @@ body {
 }
 
 /* Media queries para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 768px){
+    .logo-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .linea-vertical {
+    height: 70px;
+    }
+
+    .text h1,
+    .text h2,
+    .text h3 {
+    font-size: 14px;
+    }
+    
+    .nav {
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        margin-left: -5px;
+    }
+
+    .menu {
+        display: none;
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    /* Mostrar menú solo si está checked */
+    #menu-toggle:checked + .menu-icon + .menu {
+        /* Hermano adyacente la regla se cumple porque .menu-icon debe ir justo después de #menu-toggle
+        .menu debe ir justo después de .menu-icon */
+        display: block;
+    }
+    
+    .menu li {
+        display: block;
+        margin: 10px 0;
+        text-align: left;
+    }
+    
+    .menu a {
+        display: block;
+        background-color: #e0e0e0;
+        padding: 10px;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+
+    #home {
+        margin-top: 20px;
+    }
+
     .imagen-bienvenida-1 {
         display: block;
         width: 100%;
         margin: 10px auto;
+        text-align: center;
     }
-
+    
     .imagen-bienvenida-2,
     .imagen-bienvenida-3 {
         display: block;
         width: 90%;
         margin: 10px auto;
+        text-align: center;
     }
-
+    
     .imagen-bienvenida-1 img {
         width: 100%;
         height: auto;
     }
-
+    
     .imagen-bienvenida-2 img,
     .imagen-bienvenida-3 img {
         width: 90%;
         height: auto;
     }
-
+    
     .imagen-bienvenida-1 figcaption {
         text-align: center;
     }
-
+    
     .imagen-bienvenida-2 figcaption,
     .imagen-bienvenida-3 figcaption {
         text-align: center;
+    }
+
+    #imagenes {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .imagen-1,
+    .imagen-2,
+    .imagen-3 {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .imagen-1 img,
+    .imagen-2 img,
+    .imagen-3 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagen-1 figcaption,
+    .imagen-2 figcaption,
+    .imagen-3 figcaption {
+        text-align: center;
+        font-size: 14px;
     }
 }
