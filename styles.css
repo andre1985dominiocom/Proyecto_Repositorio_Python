@@ -46,6 +46,36 @@ body {
     color: #39a900;
 }
 
+/* Estilos de la sección de ingreso */
+.ingresar-form {
+    text-align: right;
+    margin-right: 115px;
+    color: #000;
+}
+
+#username,
+#password {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #39a900;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2e7d00;
+}
+
 /* Estilos de navegación */
 .nav input[type="checkbox"] {
     display: none;
@@ -53,7 +83,7 @@ body {
 
 .nav {
     max-width: 1100px;
-    margin: 10px auto;
+    margin: 20px auto;
     margin-left: 110px;
     background-color: #ffffff;
     padding: 15px;
@@ -310,7 +340,27 @@ body {
     .text h3 {
     font-size: 14px;
     }
-    
+
+    .ingresar-form {
+        text-align: center;
+        margin: 20px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+
+    #username,
+    #password {
+        width: 150px;
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+
+    button {
+        margin: 15px auto;
+        padding: 5px 8px;
+    }
+
     .nav {
         position: relative;
         width: 100%;
