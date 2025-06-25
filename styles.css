@@ -324,6 +324,96 @@ button:hover {
     font-size: 14px;
 }
 
+/* Estilos de las secciones de libros */
+#libros {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#libros h4 {
+    color: #39a900;
+    margin-bottom: 20px;
+}
+
+/* Estilos de las secciones de videos */
+#videos {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#videos h4 {
+    color: #39a900;
+    margin-bottom: 20px;
+}
+
+/* Estilos de las secciones de documentación */
+#documentacion {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#documentacion h4 {
+    color: #39a900;
+    margin-bottom: 20px;
+}
+
+/* Estilos de las secciones de texto */
+#texto {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#texto h4 {
+    color: #39a900;
+    margin-bottom: 20px;
+}
+
+/* Estilos de las secciones de cursos */
+#cursos {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#cursos h4 {
+    color: #39a900;
+    margin-bottom: 20px;
+}
+
+/* Estilos de las secciones de normas */
+#normas {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#normas h4 {
+    color: #39a900;
+    margin-bottom: 20px;
+}
+
+/* Estilos para eliminar los puntos de las listas */
+section, ul{
+    list-style: none;
+    padding-left: 0;
+}
+
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px){
     .logo-img {
@@ -463,5 +553,59 @@ button:hover {
     .imagen-3 figcaption {
         text-align: center;
         font-size: 14px;
+    }
+
+    #libros {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    #libros h4 {
+        font-size: 18px;
+    }
+
+    #videos {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    #videos h4 {
+        font-size: 18px;
+    }
+
+    #documentacion {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    #documentacion h4 {
+        font-size: 18px;
+    }
+
+    #texto {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    #texto h4 {
+        font-size: 18px;
+    }
+
+    #cursos {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    #cursos h4 {
+        font-size: 18px;
+    }
+
+    #normas {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    #normas h4 {
+        font-size: 18px;
     }
 }
