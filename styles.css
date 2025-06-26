@@ -48,8 +48,9 @@ body {
 
 /* Estilos de la sección de ingreso */
 .ingresar-form {
-    text-align: right;
-    margin-right: 115px;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 60px;
     color: #000;
 }
 
@@ -84,14 +85,14 @@ button:hover {
 .nav {
     max-width: 1100px;
     margin: 20px auto;
-    margin-left: 110px;
+    margin-left: 100px;
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
     border: 2px solid #39a900;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    /*position: fixed;*/
 }
 
 .menu-icon {
